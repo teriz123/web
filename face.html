@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{ padding:0; 
+            margin:0; 
+            box-sizing: border-box; 
+            font-family: sans-serif; 
+        }
+header{
+	width: 100%;
+	height: 100vh;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top:0;
+	z-index: 1;
+	background: white;
+}
+.logo{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	padding: 10px 20px;
+	margin:5px;
+	font-weight: bold;
+}
+.menu a:last-child{
+	background: black;
+	color: white;
+}
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-product .col2 img{
+    padding: 0;
+}
+.single-product .col2{
+    padding: 20px;
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product .fa{
+    color: #ff523b;
+}
+p{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #563434;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: #000;"><div class="logo">MEMA</div></a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+        </nav>
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col2">
+            <img src="t (4).png" width="100%" id="productImg">
+            <div class="small-img-row">
+            </div>
+                </div>
+                <div class="col2">
+                    <h1>Music and chill T-Shirt</h1>
+                    <h4>RS.899</h4>
+                    <a href="msg.html" class="btn">Buy</a>
+                    <h3>Product details<i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>This t-shirt is perfect for music lovers who enjoy listening to their favorite tunes most of the time. The shirt features an animal chilling while listening to music through earphone.</p>
+                </div>
+            </div>
+        </div>
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function(){
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function(){
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function(){
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function(){
+        productImg.src = smallImg[3].src;
+    }
+</script>
+
+
+</body>
+</html>
